@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto minmax(600px, 1fr) auto;
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            grid-column: span 3;
+            padding: 0.5rem;
+            background-color: #BE9FD1;
+        }
+
+        .left-section {
+            grid-column: 1/2;
+            padding: 0.5rem;
+            background-color: #FFC8DD;
+        }
+
+        main {
+            grid-column: 2/3;
+            padding: 0.5rem;
+            background-color: #FFAFCC;
+        }
+
+        .right-section {
+            grid-column: 3/4;
+            padding: 0.5rem;
+            background-color: #DEC8E5;
+        }
+
+        footer {
+            grid-column: span 3;
+            padding: 0.5rem;
+            background-color: #BDE0FE;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci sed dicta minima, nesciunt sit
+            dolores iure porro</div>
+    </header>
+    <section class="left-section">
+        <h1>Left Section</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci sed dicta minima, nesciunt sit
+            dolores iure porro</div>
+    </section>
+    <main>
+        <h1>Main Content</h1>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium voluptatibus voluptates voluptate
+            reprehenderit error atque corporis nihil expedita! Voluptas perferendis illo vel, dolorem laboriosam
+            laudantium aperiam deserunt repudiandae tempora modi.</div>
+    </main>
+    <section class="right-section">
+        <h1>Right Section</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci sed dicta minima, nesciunt sit
+            dolores iure porro</div>
+    </section>
+    <footer>
+        <h1>Footer</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci sed dicta minima, nesciunt sit
+            dolores iure porro</div>
+    </footer>
+
+</body>
+
+</html>

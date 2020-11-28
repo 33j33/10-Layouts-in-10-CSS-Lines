@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            /*Aligns content horizontally */
+            font-family: Helvetica;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /*Aligns content vertically*/
+            width: 200px;
+            padding: 0.6rem;
+            margin: 0 0.5rem;
+            background-color: #FFC8DD;
+        }
+
+        .card .image {
+            height: 100px;
+            width: 100%;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Title</h2>
+            <h4>Subtitle</h4>
+            <p>Description - Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque enim, quidem sed
+                odio veniam nisi explicabo amet dicta placeat.</p>
+            <div class="image">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Title</h2>
+            <h4>Subtitle</h4>
+            <p>Description - Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque enim, quidem sed
+                odio veniam nisi explicabo amet dicta placeat.</p>
+            <div class="image">
+            </div>
+        </div>
+        <div class="card">
+            <h2>Title</h2>
+            <h4>Subtitle</h4>
+            <p>Description - Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque enim, quidem sed
+                odio veniam nisi explicabo amet dicta placeat.</p>
+            <div class="image">
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

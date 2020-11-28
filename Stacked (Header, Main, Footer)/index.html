@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked (Header, Main, Footer</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            /*Header and Footer are sized according to their width and 
+            Main takes up rest of the space*/
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #ffafcc;
+            padding: 0.5rem;
+        }
+
+        main {
+            background-color: #a2d2ff;
+            padding: 0.5rem;
+        }
+
+        footer {
+            background-color: #cdb4db;
+            padding: 0.5rem
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, qui suscipit quasi fugit, animi dicta aliquam
+            reiciendis cumque, ratione maxime velit architecto. Ut dolorem ullam ducimus voluptatibus, veritatis ea
+            pariatur?</div>
+    </header>
+    <main>
+        <h1>Main</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, qui suscipit quasi fugit, animi dicta aliquam
+            reiciendis cumque, ratione maxime velit architecto. Ut dolorem ullam ducimus voluptatibus, veritatis ea
+            pariatur?</div>
+    </main>
+    <footer>
+        <h1>Footer</h1>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, qui suscipit quasi fugit, animi dicta aliquam
+            reiciendis cumque, ratione maxime velit architecto. Ut dolorem ullam ducimus voluptatibus, veritatis ea
+            pariatur?</div>
+    </footer>
+</body>
+
+</html>

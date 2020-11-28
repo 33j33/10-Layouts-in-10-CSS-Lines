@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            place-items: center;
+            background-color: rgb(160, 226, 235);
+            min-height: 400px;
+        }
+
+        .child {
+            max-width: 300px;
+            text-align: center;
+            background-color: rgb(238, 26, 68);
+            color: white;
+            font-size: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="child" contenteditable="">
+            Horizontally and Vertically Centered
+        </div>
+    </div>
+
+</body>
+
+</html>

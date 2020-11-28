@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Says</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: minmax(150px, 25%) 1fr;
+        }
+
+        .section {
+            height: 200px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid rgb(58, 57, 57);
+            padding: 10px;
+            font-size: 1.3rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .sidebar {
+            background-color: aqua;
+        }
+
+        .main {
+            background-color: rgb(194, 114, 235)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar section" contenteditable>
+            `minmax(150px, 25%)`, This side bar at minimum takes 150px and
+            at max takes 25% width of the container
+        </div>
+        <div class="main section" contenteditable>
+            `1fr`, This element takes the second grid position (1fr), meaning
+            it takes up the rest of the remaining space.
+        </div>
+    </div>
+
+</body>
+
+</html>

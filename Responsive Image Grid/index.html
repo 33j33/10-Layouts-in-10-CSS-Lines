@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Grid</title>
+    <style>
+        body {
+            background: rgb(19, 19, 19);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image-grid {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: 260px;
+            grid-auto-flow: dense;
+            /*Uses dense packing algorithm to fill holes in the grid
+            by moving the items up in the row to fill the grid*/
+        }
+
+        /* Medium screens and above*/
+        @media screen and (min-width: 600px) {
+            .card-tall {
+                grid-row: span 2 / auto;
+                /*At minimum it will span 2 row but can take up more rows as well*/
+            }
+
+            .card-wide {
+                grid-column: span 2 / auto;
+                /*At minimum it will span 2 columns but can take up more rows as well*/
+            }
+        }
+
+        .card {
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: rgb(236, 240, 236);
+            text-shadow: 2px 1px 0px rgba(102, 124, 124, 0.85);
+            border: 1px solid rgb(105, 102, 102);
+            border-radius: 10px;
+            transition: all ease-in 250ms;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Image Grid</h1>
+    <div class="image-grid">
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1606323309671-c51570922278?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80')">
+            1
+        </div>
+        <div class="card card-tall"
+            style="background-image:url('https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')">
+            2
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583531172005-814191b8b6c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80')">
+            3
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583426573939-97d09302d76a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')">
+            4
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1600953438062-f8f1db3510b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80')">
+            5
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583445013765-46c20c4a6772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
+            6
+        </div>
+        <div class="card card-wide"
+            style="background-image:url('https://images.unsplash.com/photo-1583562835057-a62d1beffbf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80')">
+            7
+        </div>
+        <div class="card card-tall card-wide"
+            style="background-image:url('https://images.unsplash.com/photo-1583483425010-c566431a7710?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')">
+            8
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583500557349-fb5238f8d946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80')">
+            9
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583468323330-9032ad490fed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80')">
+            10
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1583425423320-2386622cd2e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80')">
+            11
+        </div>
+        <div class="card"
+            style="background-image:url('https://images.unsplash.com/photo-1587732305677-5bc3c4bda871?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=967&q=80')">
+            12
+        </div>
+    </div>
+
+</body>
+
+</html>

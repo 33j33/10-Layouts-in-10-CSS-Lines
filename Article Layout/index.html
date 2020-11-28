@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article layout with Full Bleed Image</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: minmax(1rem, 1fr) minmax(auto, 65ch) minmax(1rem, 1fr);
+            /*Second Column will not be more than 65 characters long
+            and First and Third Column will reduce to 1rem in mobile screen*/
+            width: 100%;
+            background-color: rgba(248, 212, 212, 0.6);
+        }
+
+        .container>* {
+            grid-column: 2;
+            /*Every immediate child should be assigned to that second middle column. Each new child will create a new row*/
+            text-align: justify;
+        }
+
+        .image-full-bleed {
+            grid-column: 1/-1;
+            /*From First Column to Last*/
+        }
+
+        .image-full-bleed img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heading 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est similique nam quas voluptas cum maxime quis
+            nobis inventore temporibus harum laboriosam aliquam, error, eveniet pariatur porro ipsa enim! Eos, odit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa molestiae quos numquam earum, ut sit
+            deserunt, enim voluptate accusamus veritatis. Ipsam reiciendis quos expedita quam. Sequi perferendis
+            repellat consequatur!
+        </p>
+        <div class="image-full-bleed">
+            <img src="https://images.unsplash.com/photo-1595743019297-8cf24db78e26?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2169&q=80"
+                alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum architecto adipisci laudantium, aut harum,
+            saepe animi ex minima repudiandae dolores deserunt iure aliquid, quasi dignissimos asperiores odit quos
+            voluptatem nobis.</p>
+        <h1>Heading 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam nostrum eveniet eaque et laudantium
+            eligendi mollitia est pariatur incidunt autem nam ex suscipit a in officia, recusandae aperiam libero.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet accusantium unde est esse sint omnis
+            aliquid sunt debitis corporis et nam alias, quidem deserunt ipsam quas adipisci neque aut.
+        </p>
+    </div>
+</body>
+
+</html>

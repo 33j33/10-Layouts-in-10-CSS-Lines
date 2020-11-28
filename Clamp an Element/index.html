@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamp an Element</title>
+    <style>
+        .container {
+            display: grid;
+            place-items: center;
+            background-color: rgb(160, 226, 235);
+            min-height: 400px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /*Aligns content vertically*/
+            width: clamp(20ch, 50%, 50ch);
+            /*The width will be 50% but 
+            at min the width will be 20ch and at max 40ch*/
+            padding: 0.6rem;
+            background-color: #FFC8DD;
+        }
+
+        .card .image {
+            height: 100px;
+            width: clamp(100px, 100%, 200px);
+            background-color: #cdb4db;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Title</h1>
+            <p>Description - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quo, quia blanditiis
+                cupiditate, assumenda porro vitae ratione veniam eius, reprehenderit libero velit magnam exercitationem
+                officia veritatis adipisci repellat ab nesciunt?</p>
+            <div class="image"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
