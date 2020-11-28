@@ -13,12 +13,16 @@ Centering is one of the most challenging task in CSS. This centers everything pe
 
 <img src="./Centered/screenshot.PNG">
 
+---
+
 ## 2. Stacked Elements 
 
 Using flex and its `justify-content: center` property the following elements can be stacked and made responsive. 
 
 <img src="./Stacked-Elements/screenshot1.PNG">
 <img src="./Stacked-Elements/screenshot2.PNG" width="40%">
+
+---
 
 ## 3. Sidebar Says
 
@@ -32,11 +36,15 @@ Creating a Sidebar
 ```
 <img src="./Sidebar-Says/screenshot.PNG">
 
+--- 
+
 ## 4. Clamp an Element 
 
 `width: clamp(20ch, 50%, 50ch);` clamps the width of card between `20ch` and `50ch`
 
 <img src="./Clamp-an-Element/screenshot.PNG">
+
+--- 
 
 ## 5. Centered Cards
 
@@ -51,6 +59,8 @@ Cards are centered using flexbox.
 ```
 <img src="./Centered-Cards/screenshot.PNG">
 
+--- 
+
 ## 6. Vertical Stacked Layout
 
 Header, Main and Footer are stacked using grid
@@ -62,6 +72,9 @@ Header, Main and Footer are stacked using grid
 }
 ```
 <img src="./Vertical-Stacked-Layout/screenshot.png">
+
+
+--- 
 
 ## 7. Classic Layout 
 
@@ -91,32 +104,38 @@ footer {
 ```
 <img src="./Classic-Layout/screenshot.png">
 
+
+--- 
+
 ## 8. Article Layout 
 
 ```css
 .container {
-            display: grid;
-            grid-template-columns: minmax(1rem, 1fr) minmax(auto, 65ch) minmax(1rem, 1fr);
-            /*Second Column will not be more than 65 characters long
-            and First and Third Column will reduce to 1rem in mobile screen*/
-            width: 100%;
-        }
-        .container>* {
-            grid-column: 2;
-            /*Every immediate child should be assigned to that second middle column. Each new child will create a new row*/
-            text-align: justify;
-        }
-        .image-full-bleed {
-            grid-column: 1/-1;
-            /*From First Column to Last*/
-        }
-        .image-full-bleed img {
-            width: 100%;
-        }
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 65ch) minmax(1rem, 1fr);
+    /*Second Column will not be more than 65 characters long
+    and First and Third Column will reduce to 1rem in mobile screen*/
+    width: 100%;
+}
+.container>* {
+    grid-column: 2;
+    /*Every immediate child should be assigned to that second middle column. Each new child will create a new row*/
+    text-align: justify;
+}
+.image-full-bleed {
+    grid-column: 1/-1;
+    /*From First Column to Last*/
+}
+.image-full-bleed img {
+    width: 100%;
+}
 ```
 
 <img src="./Article-Layout/screenshot1.png">
 <img src="./Article-Layout/screenshot2.png" width="25%">
+
+
+--- 
 
 ## 9. Responsive Image Grid
 
@@ -146,6 +165,11 @@ footer {
 <img src="./Responsive-Image-Grid/screenshot2.jpg" width="50%">
 
 ### *...Work in Progress - 10th Layout coming soon*
+
+
+--- 
+
+--- 
 
 #### Inspired From
 
