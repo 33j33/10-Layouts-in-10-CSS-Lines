@@ -1,6 +1,10 @@
 # 10-Layouts-in-10-CSS-Lines
 Minimal Modern CSS layouts in just 10 lines of CSS
 
+Hosted at - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
+
+<img src="./screenshot.JPG">
+
 ## 1. Centered 
 
 ```css
