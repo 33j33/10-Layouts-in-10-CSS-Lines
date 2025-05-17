@@ -13,8 +13,8 @@ Hosted at - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
     place-items: center;
 }
 ```
-Centering is one of the most challenging task in CSS 😉! 
-These two lines center everything perfectly (both horizontally and vertically)
+Centering is one of the most challenging task in CSS 😉<br/>
+These `place-items: center` everything perfectly (both horizontally and vertically)
 
 <img src="./Centered/screenshot.PNG">
 
@@ -22,7 +22,7 @@ These two lines center everything perfectly (both horizontally and vertically)
 
 ## 2. Stacked Elements 
 
-Using flex and its `justify-content: center` property the following elements can be stacked and made responsive. 
+Using flex and its `justify-content: center` property the child elements can be stacked and made responsive without additional css. 
 
 <img src="./Stacked-Elements/screenshot1.PNG">
 <img src="./Stacked-Elements/screenshot2.PNG" width="40%">
