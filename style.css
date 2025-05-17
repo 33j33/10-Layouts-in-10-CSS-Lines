@@ -12,7 +12,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: auto minmax(400px, 600px) auto;
+    grid-template-columns: auto minmax(300px, 600px) auto;
 }
 
 ul {
@@ -38,9 +38,17 @@ li:hover {
 }
 
 
-
 span {
     padding: 10px;
     font-family: "Open Sans";
-    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
 }
