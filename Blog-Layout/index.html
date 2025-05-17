@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout with Sticky Header</title>
+    <link rel="stylesheet" href="../reset.css">
+</head>
+<style>
+    body {
+        background-color: #dbceed;
+        padding: 10px;
+    }
+
+    main {
+        max-width: 640px;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 0;
+        background-color: #dbceed;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 0.8rem 0;
+
+    }
+
+    .home {
+        font-size: 2rem;
+    }
+
+    .links {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <main>
+        <header>
+            <div class="home">My Blog</div>
+            <div class="links">
+                <a>posts</a>
+                <a>projects</a>
+                <a>works</a>
+            </div>
+        </header>
+        <section>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu scelerisque mauris. Integer tristique
+                eu ex ut
+                facilisis. Nullam sit amet commodo nisl. Curabitur quam metus, euismod vel pretium vel, vulputate vel
+                leo. Mauris
+                pretium sapien interdum semper viverra. Sed mollis vitae sem vel sollicitudin. Cras vitae ipsum mauris.
+                Aenean dapibus
+                varius interdum. Fusce bibendum odio neque, in suscipit magna tincidunt et. Fusce tincidunt ex tempus
+                ligula viverra
+                auctor. Vivamus blandit lacus ut varius fringilla. Sed neque dui, hendrerit a sapien id, tincidunt
+                egestas nibh.
+                Curabitur blandit diam tortor, non placerat massa luctus eu. Duis consequat purus et tristique
+                venenatis.</p>
+
+            <p>Nulla molestie nec lorem in viverra. Aenean ac semper erat. Interdum et malesuada fames ac ante ipsum
+                primis in
+                faucibus. Phasellus lacinia, metus molestie porta lobortis, dolor leo tempus eros, eget feugiat magna
+                dolor nec libero.
+                Quisque quis mollis nibh, et porttitor nunc. Integer feugiat imperdiet tellus in consectetur. Mauris
+                rutrum sapien ac
+                dui luctus congue. Suspendisse vehicula iaculis est ut rhoncus. In hac habitasse platea dictumst. Ut
+                iaculis vitae odio
+                nec aliquam. Nunc eu mauris justo. Vestibulum tempus urna ut purus pulvinar, blandit ultricies metus
+                facilisis. In vitae
+                dictum sapien, quis elementum dolor. Nunc erat enim, ornare ac sem non, aliquam scelerisque arcu. Fusce
+                nec arcu massa.</p>
+
+            <p>Nunc orci nibh, mollis ut volutpat vitae, interdum eu erat. Phasellus faucibus ante purus, sed convallis
+                mauris congue
+                at.
+                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in risus vel enim
+                tincidunt mattis ac ac
+                felis. Sed arcu dui, finibus sit amet rhoncus sit amet, pharetra ac urna. Vestibulum auctor velit a
+                hendrerit hendrerit.</p>
+
+            <p>Praesent nunc mauris, venenatis sit amet est id, varius laoreet erat. Maecenas vitae est non ex interdum
+                condimentum et
+                ac libero. Ut vitae risus semper, condimentum nisi vel, interdum eros. Nullam tempor turpis sed orci
+                elementum viverra
+                non eget ante. Aliquam vehicula a justo et iaculis. Phasellus nec sem porttitor, venenatis purus eget,
+                finibus urna.
+                Nulla elementum, quam et gravida malesuada, augue metus lobortis erat, nec maximus dolor nisi et nulla.
+                Vestibulum
+                lacinia facilisis rhoncus. Ut scelerisque ultricies eros. Aliquam erat volutpat. Fusce semper ipsum sed
+                augue blandit
+                ultricies. Vivamus erat nunc, varius mattis malesuada eget, ultrices ultrices orci.</p>
+
+            <p>Pellentesque molestie mi id ipsum sodales sagittis. Donec ac cursus magna. Integer rutrum quam nec congue
+                tincidunt.
+                Nunc lobortis accumsan quam, eu placerat erat iaculis vitae. Suspendisse potenti. Nulla non augue
+                mollis, dignissim nisi
+                sed, imperdiet sem. Proin egestas vestibulum libero, a fringilla nunc elementum ut. Curabitur eu erat
+                libero</p>
+        </section>
+        <footer>© 2025 | 33j33.github.io</footer>
+    </main>
+
+</body>
+
+</html>

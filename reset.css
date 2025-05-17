@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+}
+
+html {
+    background-color: #e8d6ec;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}

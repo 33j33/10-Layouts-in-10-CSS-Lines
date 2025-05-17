@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article layout with Full Bleed Image</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
         .container {
             display: grid;
@@ -12,7 +13,9 @@
             /*Second Column will not be more than 65 characters long
             and First and Third Column will reduce to 1rem in mobile screen*/
             width: 100%;
-            background-color: rgba(248, 212, 212, 0.6);
+            max-width: 1260px;
+            margin: 0 auto;
+            background-color: #f8d4d499;
         }
 
         .container>* {

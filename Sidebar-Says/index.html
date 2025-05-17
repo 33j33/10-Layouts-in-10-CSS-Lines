@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar Says</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
-        * {
-            box-sizing: border-box;
+        body {
+            height: 100%;
         }
 
         .container {
             display: grid;
             grid-template-columns: minmax(150px, 25%) 1fr;
+            height: 100%;
         }
 
         .section {
             height: 200px;
             text-align: center;
-            border-radius: 5px;
             border: 1px solid rgb(58, 57, 57);
             padding: 10px;
-            font-size: 1.3rem;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            white-space: pre-line;
         }
 
         .sidebar {
-            background-color: aqua;
+            background-color: #FFC8DD;
+            height: 100%;
         }
 
         .main {
-            background-color: rgb(194, 114, 235)
+            background-color: #7ad8ed;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="sidebar section" contenteditable>
-            `minmax(150px, 25%)`, This side bar at minimum takes 150px and
-            at max takes 25% width of the container
+        <div class="sidebar section">
+            <code>minmax(150px, 25%)</code>
+            This side bar at minimum takes <code>150px</code> and at max takes 25% width of the container
         </div>
-        <div class="main section" contenteditable>
-            `1fr`, This element takes the second grid position (1fr), meaning
-            it takes up the rest of the remaining space.
+        <div class="main section">
+            <code>1fr</code>
+            This element takes the second grid column position
         </div>
     </div>
 

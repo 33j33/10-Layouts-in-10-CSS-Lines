@@ -1,9 +1,10 @@
 # 10-Layouts-in-10-CSS-Lines
-Minimal Modern CSS layouts in just 10 lines of CSS
 
-Hosted at - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
+I created this to document some common CSS layout patterns that can be implemented with minimal code. I have compiled 10 such layouts which modern CSS can achieve with few lines of CSS.
 
-<img src="./screenshot.JPG">
+It was primarily to serve as a personal reference, but thought others might find it useful as well hence it's been deployed here - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
+
+<img src="./screenshot.png">
 
 ## 1. Centered 
 
@@ -13,7 +14,8 @@ Hosted at - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
     place-items: center;
 }
 ```
-Centering is one of the most challenging task in CSS. This centers everything perfectly (both horizontally and vertically)
+Centering is one of the most challenging task in CSS 😉<br/>
+These `place-items: center` everything perfectly (both horizontally and vertically)
 
 <img src="./Centered/screenshot.PNG">
 
@@ -21,7 +23,7 @@ Centering is one of the most challenging task in CSS. This centers everything pe
 
 ## 2. Stacked Elements 
 
-Using flex and its `justify-content: center` property the following elements can be stacked and made responsive. 
+Using flex and its `justify-content: center` property the child elements can be stacked and made responsive without additional css. 
 
 <img src="./Stacked-Elements/screenshot1.PNG">
 <img src="./Stacked-Elements/screenshot2.PNG" width="40%">
@@ -111,7 +113,9 @@ footer {
 
 --- 
 
-## 8. Article Layout 
+## 8. Full Width Image 
+
+Image takes entire width of the container while text is confined to width of 65 characters (`65ch`)
 
 ```css
 .container {
@@ -135,13 +139,45 @@ footer {
 }
 ```
 
-<img src="./Article-Layout/screenshot1.png">
-<img src="./Article-Layout/screenshot2.png" width="25%">
+<img src="./Full-Width-Image/screenshot1.png">
+<img src="./Full-Width-Image/screenshot2.png" width="25%">
 
 
 --- 
 
-## 9. Responsive Image Grid
+
+## 9. Blog Layout 
+
+Blog Layout with sticky navbar
+
+```css 
+ main {
+        max-width: 640px;
+        margin: 0 auto; 
+        /* left and right margin set to `auto` horizontally aligns main */
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+```
+
+<img src="./Blog-Layout/screenshot.png">
+
+
+## 10. Responsive Image Grid
 
 ```css
 .image-grid {
@@ -154,7 +190,7 @@ footer {
     by moving the items up in the row to fill the grid*/
 }
 /* Medium screens and above*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
     .card-tall {
         grid-row: span 2 / auto;
         /*At minimum it will span 2 row but can take up more rows as well*/
@@ -167,8 +203,6 @@ footer {
 ```
 <img src="./Responsive-Image-Grid/screenshot1.jpg">
 <img src="./Responsive-Image-Grid/screenshot2.jpg" width="50%">
-
-### *...Work in Progress - 10th Layout coming soon*
 
 
 --- 
