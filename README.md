@@ -1,8 +1,8 @@
 # 10-Layouts-in-10-CSS-Lines
 
-I created this to document some common CSS layout patterns that can be implemented with minimal code. I have compiled 10 such layouts which modern CSS can achieve with few lines of CSS.
+This project is a collection of 10 common CSS layout patterns, each implemented with about 10 lines of css. It was originally created as a personal reference to explore how concise and powerful modern CSS can be, but I decided to share it publicly in case others find it useful too.
 
-It was primarily to serve as a personal reference, but thought others might find it useful as well hence it's been deployed here - https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
+You can view the live demo here: https://33j33.github.io/10-Layouts-in-10-CSS-Lines/
 
 <img src="./screenshot.png">
 
