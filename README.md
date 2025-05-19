@@ -15,7 +15,7 @@ You can view the live demo here: https://33j33.github.io/10-Layouts-in-10-CSS-Li
 }
 ```
 Centering is one of the most challenging task in CSS 😉<br/>
-These `place-items: center` everything perfectly (both horizontally and vertically)
+`place-items: center` centers `.container` perfectly (both horizontally and vertically)
 
 <img src="./Centered/screenshot.PNG">
 
@@ -32,7 +32,7 @@ Using flex and its `justify-content: center` property the child elements can be 
 
 ## 3. Sidebar Says
 
-Creating a Sidebar 
+`grid-template-columns: minmax(150px, 25%) 1fr` creates two columns first one for sidebar and second one for main content.
 
 ```css
 .container {
@@ -70,6 +70,10 @@ Cards are centered using flexbox.
 ## 6. Vertical Stacked Layout
 
 Header, Main and Footer are stacked using grid
+
+`grid-template-rows: auto 1fr auto;` creates three rows
+
+`auto` rows (first and third) get the minimum they can live with and rest of the space is given to second row (`1fr`)
 
 ```css
 .body {
