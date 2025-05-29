@@ -38,9 +38,12 @@ li:hover {
 }
 
 
-span {
-    padding: 10px;
+li span {
+    padding: 0px 7px 2px 0px;
     font-family: "Open Sans";
+    display: inline-block;
+    width: 4ch;
+    text-align: right;
 }
 
 @media screen and (max-width: 640px) {
