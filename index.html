@@ -5,8 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10 Layouts in 10 Lines of CSS</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        header {
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 1.8rem;
+            text-shadow: 3px 2px 1px #b9abe0;
+            color: #0e172c;
+            background-color: rgb(246, 236, 244);
+            padding: 10x;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: auto minmax(300px, 600px) auto;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            grid-column: 2/3;
+        }
+
+        li {
+            padding: 10px 5px 5px 5px;
+            margin: 10px;
+            font-family: "Raleway";
+            font-size: 1.2rem;
+            border: 1px solid #3671b0;
+            border-radius: 4px;
+            background-color: #cbc4e9;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        li:hover {
+            box-shadow: inset 4px 0 0 0 #1e2e7c;
+        }
+
+
+        li span {
+            padding: 0px 7px 2px 0px;
+            font-family: "Open Sans";
+            display: inline-block;
+            width: 4ch;
+            text-align: right;
+        }
+
+        @media screen and (max-width: 640px) {
+            header {
+                font-size: 1.2rem;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
